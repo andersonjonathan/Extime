@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for event in events %}
+    {{ event.name }} - {{ event.date|date:"Y-m-d" }} <br>
+{% endfor %}
+</body>
+</html>
